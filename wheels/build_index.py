@@ -19,7 +19,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 """
 
 BASE_URL = (
-    'https://raw.githubusercontent.com/felipefg/pip-wheels-riscv/main/wheels/'
+    'https://raw.githubusercontent.com/prototyp3-dev/pip-wheels-riscv/main/wheels/'
 )
 
 

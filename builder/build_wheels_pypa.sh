@@ -19,7 +19,7 @@ function repair_wheel {
 
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
-    if [ ! -z "min_version" ]; then
+    if [ ! -z "$min_version" ]; then
         if [[ "$min_version" == "$eq_version_prefix"* ]]; then
             v=$(echo $min_version | sed 's/==//')
             is_eq=$("${PYBIN}/python" -c "from packaging.version import Version;import platform; print(Version(platform.python_version()).release[:len(Version('$v').release)] == Version('$v').release)")
